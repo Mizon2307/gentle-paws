@@ -1,0 +1,7 @@
+.env
+composer.lock
+htdocs/vendor/
+htdocs/wordpress/
+htdocs/wp-config.php
+htdocs/wp-content/*
+!htdocs/wp-content/themes
