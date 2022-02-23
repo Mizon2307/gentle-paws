@@ -1,0 +1,4 @@
+.container {
+  @apply px-6 mx-auto md:px-12 lg:px-20;
+  max-width: 1200px;
+}

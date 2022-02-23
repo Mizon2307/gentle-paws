@@ -1,0 +1,9 @@
+.preloader {
+  @apply top-0;
+  transition: all 1s ease-in-out;
+  z-index: 99999;
+}
+
+.hide-loader {
+  @apply invisible opacity-0;
+}

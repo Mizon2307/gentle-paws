@@ -1,2 +1,6 @@
-const pi = 3.14
-console.log(pi > 3)
+$(function () {
+  // Add class to remove pre-loader
+  setTimeout(function () {
+    $('.preloader').addClass('hide-loader')
+  }, 500)
+})

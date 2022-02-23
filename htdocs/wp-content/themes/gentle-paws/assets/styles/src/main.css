@@ -1,3 +1,20 @@
 @import 'tailwindcss/base';
+
 @import 'tailwindcss/components';
+@import 'components/_preloader.css';
+
 @import 'tailwindcss/utilities';
+@import 'utilities/_container.css';
+@import 'utilities/_fonts.css';
+
+body {
+  @apply antialiased font-reg;
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  @apply transition-colors duration-500 ease-in-out;
+}
