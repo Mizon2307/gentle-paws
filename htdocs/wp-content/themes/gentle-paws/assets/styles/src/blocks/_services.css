@@ -1,0 +1,7 @@
+@screen md {
+  .service:nth-of-type(2n) {
+    .service-flip {
+      @apply order-2;
+    }
+  }
+}

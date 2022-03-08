@@ -1,0 +1,25 @@
+.story {
+  .container {
+    @apply px-0;
+  }
+
+  p {
+    @apply mb-6;
+
+    a {
+      @apply font-bold text-white hover:text-blue;
+    }
+  }
+
+  .img {
+    height: 450px;
+
+    @screen sm {
+      height: 500px;
+    }
+
+    @screen md {
+      height: 100%;
+    }
+  }
+}

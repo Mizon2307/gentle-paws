@@ -31,7 +31,7 @@
 		$menu = wp_get_menu_array('primary');
 	?>
 
-	<header>
+	<header class="hidden">
 
 		<nav>
 			<?php	foreach ( $menu as $item ) : ?>

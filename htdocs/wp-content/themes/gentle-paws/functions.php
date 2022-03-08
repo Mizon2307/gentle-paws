@@ -230,6 +230,17 @@ remove_action( 'welcome_panel', 'wp_welcome_panel' );
 
 
 
+// Truncate functionality for posts
+function truncate($text, $chars = 25) {
+	$text = $text." ";
+	$text = substr($text,0,$chars);
+	$text = substr($text,0,strrpos($text,' '));
+	$text = $text."...";
+	return $text;
+}
+
+
+
 // Custom Post Type for Services
 
 function Services() {

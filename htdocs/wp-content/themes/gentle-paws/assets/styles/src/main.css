@@ -7,8 +7,14 @@
 @import 'utilities/_container.css';
 @import 'utilities/_fonts.css';
 
+@import 'blocks/_form.css';
+@import 'blocks/_gallery.css';
+@import 'blocks/_services.css';
+@import 'blocks/_single-post.css';
+@import 'blocks/_story.css';
+
 body {
-  @apply antialiased font-reg;
+  @apply antialiased bg-white font-reg text-navy;
 }
 
 :focus {

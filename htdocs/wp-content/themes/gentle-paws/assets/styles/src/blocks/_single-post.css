@@ -1,0 +1,13 @@
+.single-post {
+  p {
+    @apply mb-6;
+
+    a {
+      @apply font-bold text-blue hover:text-orange;
+    }
+
+    &.date {
+      @apply mb-0;
+    }
+  }
+}
