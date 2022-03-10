@@ -18,7 +18,7 @@
             <div class="w-full h-64 mb-6 bg-top bg-no-repeat bg-cover md:mb-0 sm:h-96 md:h-full service-flip" style="background-image:url('<?php the_field('featured_image'); ?>');"></div>
 
             <div>
-              <h2 class="mb-5 font-bold lg:mb-6 text-30 md:text-32 lg:text-36"><?php the_title(); ?></h2>
+              <h2 class="mb-5 font-bold lg:mb-6 text-30 md:text-32 lg:text-36 text-blue"><?php the_title(); ?></h2>
               <?php the_field('text'); ?>
               <a href="/contact/" class="inline-block py-3 mt-8 text-white uppercase rounded-md cursor-pointer px-7 md:px-8 md:py-4 font-med bg-orange text-14 md:text-16 hover:bg-navy">Enquire Now</a>
             </div>

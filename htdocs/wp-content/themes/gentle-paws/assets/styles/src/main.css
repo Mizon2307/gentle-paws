@@ -2,10 +2,12 @@
 
 @import 'tailwindcss/components';
 @import 'components/_preloader.css';
+@import 'components/_forms.css';
 
 @import 'tailwindcss/utilities';
 @import 'utilities/_container.css';
 @import 'utilities/_fonts.css';
+@import 'utilities/_header.css';
 
 @import 'blocks/_form.css';
 @import 'blocks/_gallery.css';

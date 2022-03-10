@@ -1,0 +1,79 @@
+.main-nav-desktop {
+  a {
+    &:after {
+      content: '';
+      @apply absolute bottom-0 left-0 w-full bg-white;
+      height: 3px;
+      margin-bottom: -24px;
+    }
+
+    &.active-nav-desktop {
+      &:after {
+        @apply bg-blue;
+      }
+    }
+  }
+}
+
+#hamburger {
+  @apply z-40;
+  width: 28px;
+  height: 19px;
+  transform: rotate(180deg);
+
+  .bar {
+    @apply bg-blue;
+    height: 3px;
+    user-select: none;
+    transition: 0.4s;
+    border-radius: 3px;
+
+    &:nth-child(1) {
+      @apply top-0 w-full;
+    }
+
+    &:nth-child(2) {
+      @apply w-full;
+      top: 46%;
+    }
+
+    &:nth-child(3) {
+      @apply w-full;
+      bottom: -6%;
+    }
+  }
+
+  &.animate {
+    .bar {
+      &:nth-child(1) {
+        @apply bg-orange;
+        transform: translateY(8px) rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        @apply opacity-0;
+      }
+
+      &:nth-child(3) {
+        @apply bg-orange;
+        transform: translateY(-7px) rotate(-135deg);
+        bottom: 10%;
+      }
+    }
+  }
+}
+
+.show {
+  @apply overflow-hidden;
+}
+
+.nav-mob-container {
+  transform: translateX(100vw);
+  transition: 0.4s all cubic-bezier(0.6, 0.04, 0.4, 1);
+  visibility: hidden;
+
+  &.active-nav {
+    transform: translateX(0px);
+    visibility: visible;
+  }
+}

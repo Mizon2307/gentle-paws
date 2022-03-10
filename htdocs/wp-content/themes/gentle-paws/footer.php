@@ -62,5 +62,7 @@
 
 <?php wp_footer(); ?>
 
+<script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+
 </body>
 </html>

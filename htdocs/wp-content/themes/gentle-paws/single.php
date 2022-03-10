@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
 
-<section class="relative w-full py-24 text-white bg-navy">
+<section class="relative w-full pt-40 pb-24 text-white bg-navy">
 		<div class="container flex flex-col lg:flex-row lg:justify-between">
 			<div class="lg:order-2">
 				<svg class="mb-12 w-28 sm:w-32 md:w-36 xl:w-44" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 119">

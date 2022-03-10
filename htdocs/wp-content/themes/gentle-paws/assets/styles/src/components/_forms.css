@@ -1,0 +1,4 @@
+.gform_wrapper.gravity-theme .gfield input.large,
+.gform_wrapper.gravity-theme .gfield select.large {
+  @apply bg-transparent;
+}
