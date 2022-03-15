@@ -1,4 +1,333 @@
-.gform_wrapper.gravity-theme .gfield input.large,
-.gform_wrapper.gravity-theme .gfield select.large {
-  @apply bg-transparent;
+form {
+  @apply flex flex-wrap items-center justify-center w-full overflow-hidden;
+}
+
+.text-input input {
+  @apply block w-full overflow-hidden text-white text-16;
+  height: 3.8rem;
+  margin-bottom: 1.875rem;
+  -webkit-appearance: none;
+  padding: 1.5rem;
+  transition: 0.4s all ease-in-out;
+  border: 2px solid white;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 0.3em;
+
+  @screen lg {
+    @apply text-18;
+  }
+}
+
+.text-input input:focus {
+  @apply border-blue;
+  outline: none;
+}
+
+.wpcf7-form-control-wrap.full-name {
+  @screen lg {
+    margin-right: 15px;
+  }
+}
+
+.wpcf7-form-control-wrap.telephone {
+  @screen lg {
+    margin-left: 15px;
+  }
+}
+
+.wpcf7-form-control-wrap.email {
+  @screen lg {
+    margin-right: 15px;
+  }
+}
+
+textarea {
+  @apply block w-full overflow-hidden text-white text-16;
+  margin-bottom: 3rem;
+  -webkit-appearance: none;
+  padding: 1.5rem;
+  transition: 0.4s all ease-in-out;
+  border-radius: 0.3em;
+  border: 2px solid white;
+  box-sizing: border-box;
+  background: transparent;
+
+  @screen lg {
+    @apply text-18;
+  }
+}
+
+textarea:focus {
+  @apply border-blue;
+}
+
+@screen sm {
+  textarea {
+    font-size: 1.1em;
+    max-height: 10rem;
+  }
+}
+
+.wpcf7-select {
+  @apply text-white text-16;
+  display: block;
+  height: 3.8rem;
+  margin-bottom: 1.875rem;
+  -webkit-appearance: none;
+  padding: 0 0 0 1.5rem;
+  transition: 0.4s all ease-in-out;
+  overflow: hidden;
+  border-radius: 0;
+  border: 2px solid white;
+  box-sizing: border-box;
+  width: 100%;
+  letter-spacing: 0.01em;
+  background: transparent;
+  border-radius: 6px;
+  background-size: 1.3rem;
+  background-position: 97%;
+  text-transform: none;
+  &:focus {
+    outline: 0;
+  }
+  @screen sm {
+    @apply text-18;
+    padding: 0 1.5rem;
+  }
+}
+
+.wpcf7-form-control-wrap.breed {
+  @screen lg {
+    margin-left: 15px;
+  }
+}
+
+.select {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    @apply bg-white text-navy;
+    content: url('http://gentle-paws.test/wp-content/themes/gentle-paws/assets/img/icons/chevron-group.svg');
+    font-size: 1.5em;
+    position: absolute;
+    right: 0;
+    width: 3.910625rem;
+    height: 3.8rem;
+    top: 0;
+    z-index: 9;
+    border-radius: 0 6px 6px 0;
+    pointer-events: none;
+    margin-right: 0;
+    overflow: hidden;
+  }
+}
+
+/* .select-field-right:after {
+  margin-right: 0;
+} */
+
+.wpcf7-form-control-wrap {
+  @apply flex flex-col items-center justify-center;
+}
+
+.checkbox-260 {
+  @apply items-start;
+}
+
+span.wpcf7-list-item {
+  @apply flex items-center justify-center m-0;
+}
+
+.wpcf7-form .wpcf7-checkbox input[type='checkbox'] {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+input[type='checkbox'] {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  opacity: 0;
+  z-index: 9999;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+span.wpcf7-list-item-label {
+  @apply relative text-white;
+  padding-left: 2.25rem;
+}
+
+span.wpcf7-list-item {
+  position: relative;
+}
+
+span.wpcf7-list-item-label::before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+span.wpcf7-list-item-label::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+}
+
+input[type='checkbox']:checked + span.wpcf7-list-item-label::after {
+  @apply bg-blue;
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  visibility: visible;
+}
+
+.term_and_conditions span.wpcf7-acceptance span.wpcf7-list-item-label {
+  cursor: pointer;
+}
+
+.wpcf7-submit {
+  @apply bg-orange text-16 font-med;
+  width: auto;
+  padding: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  height: auto;
+  border: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  transition: 0.4s all ease-in-out;
+  width: 190px;
+}
+
+.wpcf7-submit:hover {
+  @apply bg-blue;
+  text-decoration: none;
+}
+
+.wpcf7-submit:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #0e253a;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #0e253a;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #0e253a;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #0e253a;
+}
+
+/** Error/Success messages **/
+
+span.wpcf7-not-valid-tip {
+  font-size: 1.1em !important;
+  color: red !important;
+  position: absolute;
+  bottom: -0.25rem;
+  width: 100%;
+}
+
+span.wpcf7-not-valid-tip {
+  display: none;
+}
+
+input.wpcf7-form-control.wpcf7-validates-as-required.wpcf7-not-valid {
+  border-color: red;
+}
+
+.wpcf7-checkbox.wpcf7-validates-as-required.wpcf7-not-valid
+  span.wpcf7-list-item-label::before {
+  border-color: red;
+}
+
+.wpcf7-display-none {
+  transform: translateY(100%);
+  transition: 0.3s ease-in-out all;
+  display: inline-block;
+  visibility: hidden;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  margin: 0;
+  transition: 0.3s ease-in-out all;
+  background: transparent;
+  border: none;
+  font-size: 1.15em;
+  /* font-family: 'raleway-bold', sans-serif; */
+  transform: translateY(100%);
+}
+
+@screen sm {
+  div.wpcf7-response-output {
+    font-size: 1.25em;
+  }
+}
+
+@screen md {
+  div.wpcf7-response-output {
+    font-size: 1.3em;
+  }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+  background: red;
+  color: white;
+  transform: translateY(0);
+  visibility: visible;
+  border: none;
+  padding: 1.5rem;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  @apply text-white bg-blue;
+  transform: translateY(0);
+  border: none;
+  visibility: visible;
+  padding: 1.5rem;
+}
+
+div.wpcf7 .ajax-loader {
+  display: none !important;
 }
