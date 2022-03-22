@@ -27,7 +27,7 @@
 
 	<a class="sr-only focus:not-sr-only" href="#content">Skip to content</a>
 
-	<!-- <div class="fixed z-50 flex flex-col items-center justify-center w-full h-screen preloader bg-blue"></div> -->
+	<div class="fixed z-50 flex flex-col items-center justify-center w-full h-screen preloader bg-blue"></div>
 
 	<?php
 		$menu = wp_get_menu_array('primary');

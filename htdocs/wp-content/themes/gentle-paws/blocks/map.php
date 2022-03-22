@@ -8,7 +8,7 @@
     <div class="w-full">
       <h2 class="font-bold text-26 md:text-32 lg:text-40 xl:text-46 mb-7"><?php echo $title; ?></h2>
       <p class="mb-10 text-18 md:text-22 lg:mb-14"><?php echo $text; ?></p>
-      <iframe src="https://snazzymaps.com/embed/375680" width="100%" height="620px" style="border:none;"></iframe>
+        <iframe src="https://snazzymaps.com/embed/375680" width="100%" height="620px" style="border:none;"></iframe>
     </div>
   </div>
 </section>

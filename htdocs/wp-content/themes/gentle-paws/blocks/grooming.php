@@ -34,16 +34,16 @@
 				while ( $query->have_posts() ) : $query->the_post();?>
 
           <div class="w-full">
-            <a href="/grooming/" class="flex flex-col justify-between h-full px-4 py-4 border-2 rounded-sm bg-navy hover:bg-blue border-navy">
+            <a href="/grooming/" class="flex flex-col justify-between h-full px-4 py-4 rounded-sm bg-navy hover:bg-navyLight">
               <div>
                 <div class="w-full mb-6 bg-center bg-no-repeat bg-cover h-52 sm:h-48 md:h-56 lg:h-40" style="background-image:url('<?php the_field('featured_image'); ?>');"></div>
                 <h4 class="mb-4 text-orange font-med text-18 md:text-20 lg:text-20"><?php the_title(); ?></h4>
                 <p class="text-14 md:text-16 mb-7"><?php the_field('intro'); ?></p>
               </div>
               <div>
-                <p class="flex justify-between uppercase">
+                <p class="flex items-center justify-between uppercase">
                   <span class="text-14">Read More</span>
-                  <svg class="w-4" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17">
+                  <svg class="w-4 h-4" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17">
                     <path d="m19.738 7.37-5.6-6.928c-.464-.529-1.206-.58-1.694-.172-.488.407-.568 1.229-.169 1.726l3.988 4.93H1.2c-.663 0-1.2.547-1.2 1.222 0 .675.537 1.223 1.2 1.223h15.063l-3.988 4.93c-.399.496-.31 1.307.169 1.725.493.432 1.295.325 1.694-.172l5.6-6.929c.365-.522.334-1.048 0-1.554Z" fill="#fff"/>
                   </svg>
                 </p>

@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'lexend-regular';
-  src: url('Lexend-Regular.woff2') format('woff2'),
-    url('Lexend-Regular.woff') format('woff');
+  src: url('../../fonts/Lexend-Regular.woff2') format('woff2'),
+    url('../../fonts/Lexend-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'lexend-medium';
-  src: url('Lexend-SemiBold.woff2') format('woff2'),
-    url('Lexend-SemiBold.woff') format('woff');
+  src: url('../../fonts/Lexend-SemiBold.woff2') format('woff2'),
+    url('../../fonts/Lexend-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'lexend-bold';
-  src: url('Lexend-Bold.woff2') format('woff2'),
-    url('Lexend-Bold.woff') format('woff');
+  src: url('../../fonts/Lexend-Bold.woff2') format('woff2'),
+    url('../../fonts/Lexend-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
