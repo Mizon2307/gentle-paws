@@ -1,0 +1,13 @@
+.grooming-content {
+  p {
+    padding-bottom: 0.75rem;
+  }
+
+  ul {
+    @apply mb-6 ml-8;
+
+    li {
+      @apply my-2 list-disc;
+    }
+  }
+}

@@ -55,7 +55,7 @@
 				?>
 
 				<?php
-					$feature_image = get_field('featured_image', $next);
+					$feature_image_next = get_field('featured_image', $next);
 				?>
 
 				<?php
@@ -63,7 +63,7 @@
 				?>
 
 				<?php if ( get_next_post() ) { ?>
-					<div class="relative w-full p-8 mb-10 bg-center bg-no-repeat bg-cover md:p-12 sm:mb-0" style="background-image:url('<?php echo $feature_image; ?>');">
+					<div class="relative w-full p-8 mb-10 bg-top bg-no-repeat bg-cover md:p-12 sm:mb-0" style="background-image:url('<?php echo $feature_image_next; ?>');">
 
 						<div class="relative z-20 flex flex-col justify-between h-full">
 							<div>
@@ -82,7 +82,7 @@
 				<?php } if ( get_previous_post() ) { ?>
 					<div class="w-full">
 
-					<div class="relative w-full p-8 mb-10 bg-center bg-no-repeat bg-cover md:p-12 sm:mb-0" style="background-image:url('<?php echo $feature_image; ?>');">
+					<div class="relative w-full p-8 mb-10 bg-top bg-no-repeat bg-cover md:p-12 sm:mb-0" style="background-image:url('<?php echo $feature_image_previous; ?>');">
 
 						<div class="relative z-20 flex flex-col justify-between h-full">
 							<div>

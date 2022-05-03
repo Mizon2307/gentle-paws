@@ -11,6 +11,8 @@
 
 @import 'blocks/_form.css';
 @import 'blocks/_gallery.css';
+@import 'blocks/_grooming.css';
+@import 'blocks/_hero.css';
 @import 'blocks/_services.css';
 @import 'blocks/_single-post.css';
 @import 'blocks/_story.css';

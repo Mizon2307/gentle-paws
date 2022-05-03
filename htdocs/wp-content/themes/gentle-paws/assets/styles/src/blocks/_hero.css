@@ -1,0 +1,11 @@
+.hero {
+  @screen lg {
+    min-height: 900px;
+  }
+}
+
+.overlay {
+  @screen lg {
+    min-height: 900px;
+  }
+}

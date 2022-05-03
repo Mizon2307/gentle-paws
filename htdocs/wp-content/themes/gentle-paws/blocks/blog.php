@@ -35,7 +35,7 @@
 
           <div class="w-full">
             <div>
-              <div class="w-full bg-center bg-no-repeat bg-cover rounded-t-md mb-7 h-52 sm:h-80 md:h-48" style="background-image:url('<?php the_field('featured_image'); ?>');"></div>
+              <div class="w-full bg-top bg-no-repeat bg-cover rounded-t-md mb-7 h-52 sm:h-80 md:h-48" style="background-image:url('<?php the_field('featured_image'); ?>');"></div>
               <div class="flex flex-wrap justify-between mb-4">
                 <p class="text-14 text-orange font-med"><?php the_time( 'd/m/Y' ); ?></p>
               </div>

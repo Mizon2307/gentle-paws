@@ -109,7 +109,7 @@ textarea:focus {
   overflow: hidden;
   &:after {
     @apply bg-white text-navy;
-    content: url('http://gentle-paws.test/wp-content/themes/gentle-paws/assets/img/icons/chevron-group.svg');
+    content: url('https://cmstaging.co.uk/wp-content/themes/gentle-paws/assets/img/icons/chevron-group.svg');
     font-size: 1.5em;
     position: absolute;
     right: 0;
